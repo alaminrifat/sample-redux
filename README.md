@@ -1,8 +1,26 @@
-# React + Vite
+# Project Name
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Short project description.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Project Name](#project-name)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+
+## Installation
+
+Steps to install and set up the project.
+
+    ```shell
+    git clone https://github.com/alaminrifat/sample-redux.git
+    ```
+    ```shell
+    cd sample-redux
+    ```
+    ```shell
+    npm install
+    ```
+    ```shell
+    npm run dev
+    ```
