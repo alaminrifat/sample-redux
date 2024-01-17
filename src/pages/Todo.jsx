@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Textbox from "../components/Textbox";
 import { useSelector, useDispatch } from "react-redux";
 import { addTodo, removeTodo } from "../redux/slice";
+import { toast } from "react-hot-toast";
 const Todo = () => {
     const [textInput, setTextInput] = useState("");
     const handleTextChange = (newValue) => {
@@ -18,13 +19,17 @@ const Todo = () => {
                 text: textInput,
             })
         );
-        console.log('Action dispatched: "addTodo"');
+        toast.success("Todo Added", {
+            icon: "💝",
+        });
         setTextInput("");
     };
 
     const handleDelete = (id) => {
         dispatch(removeTodo(id));
-        console.log('Action dispatched: "removeTodo"');
+        toast.success("Todo Removed", {
+            icon: "💔",
+        });
     };
     return (
         <div>
